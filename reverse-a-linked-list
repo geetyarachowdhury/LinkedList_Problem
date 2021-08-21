@@ -1,7 +1,9 @@
+#not_ideal
+
 SinglyLinkedListNode* reverse(SinglyLinkedListNode* llist) {
     struct SinglyLinkedListNode *p = llist;
     int i = 0;
-    int aArr[20];
+    int aArr[1000];
     while(p!=NULL) {
         aArr[i] = p->data;
         p = p->next;
