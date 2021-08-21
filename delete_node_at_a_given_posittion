@@ -1,0 +1,16 @@
+SinglyLinkedListNode* deleteNode(SinglyLinkedListNode* llist, int position) {
+    struct SinglyLinkedListNode *p = llist, *q=NULL;
+    int i;
+    if(position==0) {
+        llist = llist->next;
+        free(p);
+    } else {
+        for(i = 0; i<position; i++) {
+            q = p;
+            p = p->next;
+        }
+        q-> next = p->next;
+        free(p);
+    }
+    return llist;    
+}
