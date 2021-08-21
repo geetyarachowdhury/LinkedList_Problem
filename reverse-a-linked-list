@@ -1,4 +1,4 @@
-#not_ideal
+#not_ideal "not recommended"
 
 SinglyLinkedListNode* reverse(SinglyLinkedListNode* llist) {
     struct SinglyLinkedListNode *p = llist;
