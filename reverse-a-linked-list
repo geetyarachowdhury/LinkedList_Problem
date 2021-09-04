@@ -16,3 +16,17 @@ SinglyLinkedListNode* reverse(SinglyLinkedListNode* llist) {
     }
     return llist;
 }
+
+#the recommended one
+
+struct Node* reverseList(struct Node *head)
+    {
+        struct Node *q = NULL, *r = NULL, *p = head;
+        while(p != NULL) {
+            r = q;
+            q = p;
+            p = p->next;
+            q->next = r;
+        }
+        return q;
+    }
